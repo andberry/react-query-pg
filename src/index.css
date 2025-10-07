@@ -1,1 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansation:wght@300;400;700&family=Ubuntu:wght@300;400;500;700&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --color-*: initial;
+  --color-white: white;
+  --color-black: #111111;
+  --color-teal: #317187;
+  --color-green: #5AA244;
+  --color-brown: #300F03;
+
+  --font-ubuntu: "Ubuntu", sans-serif;
+  --font-sansation: "Sansation", sans-serif;
+}
