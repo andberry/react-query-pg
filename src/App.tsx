@@ -9,14 +9,14 @@ function App() {
   const [status, setStatus] = useState<'grid' | 'error'>('grid') 
   return (
     <QueryClientProvider client={queryClient}>
-    <div className='max-w-(--breakpoint-md) mx-auto px-4 py-16'>
+    <div className='max-w-(--breakpoint-md) mx-auto px-4 py-16 font-ubuntu font-medium'>
       <header>
-        <h1 className='text-center uppercase text-6xl font-black pt-2 pb-6'>React Query Playground</h1>
+        <h1 className='font-sansation font-light text-center text-brown uppercase text-6xl pt-2 pb-6'>React Query Playground</h1>
       </header>
 
-      <div className="flex gap-4 bg-pink-700 text-white p-4 rounded-md">
-        <button onClick={() => {setStatus('grid')}} className=" bg-white font-bold text-pink-600 px-3 py-2 rounded-md">Grid View</button>
-        <button onClick={() => {setStatus('error')}} className="bg-white font-bold text-pink-600 px-3 py-2 rounded-md">Error View</button>
+      <div className="flex gap-4 rounded-md mt-12">
+        <button onClick={() => {setStatus('grid')}} className=" bg-teal text-white px-6 py-3 rounded-md">Grid View</button>
+        <button onClick={() => {setStatus('error')}} className="bg-teal text-white px-6 py-3 rounded-md">Error View</button>
       </div>
       <section className="my-8">
         {status === 'grid' && (

@@ -16,8 +16,8 @@ export const ControlBar = () => {
   }
   return (
     <div className="flex gap-4">
-      <button onClick={onRefresh} className="bg-emerald-500 font-bold text-white px-3 py-2 rounded-md">Refresh</button>
-      <button onClick={onAddOne} className="bg-emerald-500 font-bold text-white px-3 py-2 rounded-md">Add One</button>
+      <button onClick={onRefresh} className="bg-green text-white px-3 py-2 rounded-md">Refresh</button>
+      <button onClick={onAddOne} className="bg-green text-white px-3 py-2 rounded-md">Add One</button>
     </div>
   )
 }

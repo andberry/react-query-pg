@@ -10,13 +10,13 @@ export const SmartphonesGrid = () => {
   const smartphonesQuery = useGetSmartphones();
   
   return (
-    <div className=" mt-6">
-      <h2 className='uppercase text-3xl font-black pt-2 pb-6'>Grid View</h2>
+    <div className="bg-lightblue mt-6">
+      <h2 className='text-3xl font-normal pt-2 pb-6 font-sansation uppecase'>Grid View</h2>
       <ControlBar />
       <div className="relative min-h-80 mt-6">
         {(smartphonesQuery.isFetching) && (
           <div className="absolute inset-0 flex items-center justify-center text-5xl">
-            <IconSpinner className="animate-spin text-emerald-600" />
+            <IconSpinner className="animate-spin text-green" />
           </div>
         )}
         {smartphonesQuery.isError && (
